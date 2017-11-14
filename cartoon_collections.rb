@@ -14,7 +14,10 @@ end
 
 def find_the_cheese(cheesefinder)
     cheese_types = ["cheddar", "gouda", "camembert"]
-    cheesefinder.find do |word|
-    cheese_types.find {|cheese| cheese == word}
+    new_array = []
+    new_array << cheesefinder.zip(cheese_types.cycle)
+    if new_array == cheese
+      true
+    else
   end
 end
