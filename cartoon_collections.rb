@@ -13,11 +13,8 @@ planet.any? {|word| word.length > 4}
 end
 
 def find_the_cheese(cheesefinder)
-    cheese_types = ["cheddar", "gouda", "camembert"]
-    new_array = []
-    new_array << cheesefinder.find(cheese_types.cycle)
-    if new_array.any? == ("cheddar""gouda""camembert")
-      return cheese_types[0]
-    else
-  end
-end
+  cheese_types = ["cheddar", "gouda", "camembert"]
+      array.find do |word|
+      cheese_types.find {|cheese| cheese == word}
+    end
+end		
