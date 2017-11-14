@@ -14,7 +14,7 @@ end
 
 def find_the_cheese(cheesefinder)
   cheese_types = ["cheddar", "gouda", "camembert"]
-      cheesefinder.all? do |word|
+      cheesefinder.find do |word|
       cheese_types.find {|cheese| cheese == word}
     end
 end
