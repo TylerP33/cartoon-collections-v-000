@@ -17,7 +17,7 @@ def find_the_cheese(cheesefinder)
     new_array = []
     new_array << cheesefinder.find(cheese_types.cycle)
     if new_array.any? == ("cheddar""gouda""camembert")
-      return cheese_types
+      return cheese_types[0]
     else
   end
 end
